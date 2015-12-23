@@ -12,3 +12,6 @@ def l_permute(x):
     else:
         return [[y] + p for y in x
                 for p in l_permute([z for z in x if z != y])]
+
+def l_collapse(x):
+    return [''.join([str(z) for z in y]) for y in x]
